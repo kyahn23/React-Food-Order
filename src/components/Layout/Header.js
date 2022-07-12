@@ -9,7 +9,7 @@ const Header = (props) => {
     <React.Fragment>
       <header className={classes.header}>
         <h1>음식주문</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       {/* css class명에 - 이 들어갈 경우 . 사용 불가 */}
       <div className={classes["main-image"]}>
